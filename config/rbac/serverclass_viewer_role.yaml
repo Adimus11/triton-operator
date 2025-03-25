@@ -1,0 +1,23 @@
+# permissions for end users to view serverclasses.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: triton-operator
+    app.kubernetes.io/managed-by: kustomize
+  name: serverclass-viewer-role
+rules:
+- apiGroups:
+  - triton.ml.triton
+  resources:
+  - serverclasses
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - triton.ml.triton
+  resources:
+  - serverclasses/status
+  verbs:
+  - get
