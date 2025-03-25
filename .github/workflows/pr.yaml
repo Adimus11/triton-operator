@@ -23,4 +23,4 @@ jobs:
         uses: docker/setup-buildx-action@v3
       - name: Build Docker image
         run: |
-          docker buildx build . -t triton-controller-operator:${{ github.sha }}
+          docker buildx build . -t triton-controller-operator-test:${{ github.sha }}
