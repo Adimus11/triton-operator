@@ -29,7 +29,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/${{ github.repository }}/triton-operator-controller:latest,ghcr.io/${{ github.repository }}/triton-operator-controller:${{ github.sha }}
-          cache-from: type=registry,ref=ghcr.io/${{ github.repository }}/triton-operator-controller:cache
-          cache-to: type=registry,ghcr.io/${{ github.repository }}/triton-operator-controller:latest
+          tags: ghcr.io/${{ github.repository_owner }}/triton-operator-controller:latest,ghcr.io/${{ github.repository_owner }}/triton-operator-controller:${{ github.sha }}
+          cache-from: type=registry,ref=ghcr.io/${{ github.repository_owner }}/triton-operator-controller:cache
+          cache-to: type=registry,ghcr.io/${{ github.repository_owner }}/triton-operator-controller:cache
           
