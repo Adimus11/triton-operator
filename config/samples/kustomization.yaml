@@ -1,0 +1,4 @@
+## Append samples of your project ##
+resources:
+- triton_v1alpha1_serverclass.yaml
+# +kubebuilder:scaffold:manifestskustomizesamples

@@ -1,0 +1,9 @@
+apiVersion: triton.ml.triton/v1alpha1
+kind: ServerClass
+metadata:
+  labels:
+    app.kubernetes.io/name: triton-operator
+    app.kubernetes.io/managed-by: kustomize
+  name: serverclass-sample
+spec:
+  # TODO(user): Add fields here
